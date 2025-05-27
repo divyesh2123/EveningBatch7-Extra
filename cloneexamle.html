@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="educationInfo">
+        <div id="educationSection">
+<input type="text" placeholder="uni name"/>
+     <input type="text" placeholder="course name"/>
+     <button onclick="addmoreInfo()">add more</button>
+     </div>
+</div>
+
+    <script>
+        const addmoreInfo= ()=>{
+
+            let p = document.getElementById("educationSection").cloneNode(true);
+
+            document.getElementById("educationInfo").appendChild(p);
+            console.log(p);
+
+        }
+
+    </script>
+</body>
+</html>
